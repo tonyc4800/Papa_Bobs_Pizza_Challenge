@@ -1,0 +1,13 @@
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\bin\Debug\PapaBobsPizza.Domain.dll
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\bin\Debug\PapaBobsPizza.Domain.pdb
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\bin\Debug\PapaBobsPizza.DTO.dll
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\bin\Debug\PapaBobsPizza.Persistence.dll
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\bin\Debug\PapaBobsPizza.DTO.pdb
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\bin\Debug\PapaBobsPizza.Persistence.pdb
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\bin\Debug\PapaBobsPizza.Persistence.dll.config
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\obj\Debug\PapaBobsPizza.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\obj\Debug\PapaBobsPizza.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\obj\Debug\PapaBobsPizza.Domain.dll
+C:\Users\Anthony\Documents\Visual Studio 2017\Projects\PapaBobsPizza\PapaBobsPizza.Domain\obj\Debug\PapaBobsPizza.Domain.pdb

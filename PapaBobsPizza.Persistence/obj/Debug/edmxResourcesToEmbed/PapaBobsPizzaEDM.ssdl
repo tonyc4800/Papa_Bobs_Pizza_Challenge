@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PapaBobsPizzaDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Size" Type="int" Nullable="false" />
+    <Property Name="Crust" Type="int" Nullable="false" />
+    <Property Name="Sausage" Type="bit" Nullable="false" />
+    <Property Name="Pepperoni" Type="bit" Nullable="false" />
+    <Property Name="Onions" Type="bit" Nullable="false" />
+    <Property Name="GreenPeppers" Type="bit" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Zip" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="PaymentType" Type="int" Nullable="false" />
+    <Property Name="TotalCost" Type="smallmoney" Nullable="false" />
+    <Property Name="Completed" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\ANTHONY\DOCUMENTS\VISUAL STUDIO 2017\PROJECTS\PAPABOBSPIZZA\PAPABOBSPIZZA\APP_DATA\PAPABOBSPIZZADB.MDF.dbo.Prices' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Prices">
+    <Key>
+      <PropertyRef Name="Small" />
+      <PropertyRef Name="Medium" />
+      <PropertyRef Name="Large" />
+      <PropertyRef Name="Regular" />
+      <PropertyRef Name="Thin" />
+      <PropertyRef Name="Thick" />
+      <PropertyRef Name="Sausage" />
+      <PropertyRef Name="Pepperoni" />
+      <PropertyRef Name="Onions" />
+      <PropertyRef Name="GreenPeppers" />
+    </Key>
+    <Property Name="Small" Type="smallmoney" Nullable="false" />
+    <Property Name="Medium" Type="smallmoney" Nullable="false" />
+    <Property Name="Large" Type="smallmoney" Nullable="false" />
+    <Property Name="Regular" Type="smallmoney" Nullable="false" />
+    <Property Name="Thin" Type="smallmoney" Nullable="false" />
+    <Property Name="Thick" Type="smallmoney" Nullable="false" />
+    <Property Name="Sausage" Type="smallmoney" Nullable="false" />
+    <Property Name="Pepperoni" Type="smallmoney" Nullable="false" />
+    <Property Name="Onions" Type="smallmoney" Nullable="false" />
+    <Property Name="GreenPeppers" Type="smallmoney" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PapaBobsPizzaDBModelStoreContainer">
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Prices" EntityType="Self.Prices" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Prices].[Small] AS [Small], 
+    [Prices].[Medium] AS [Medium], 
+    [Prices].[Large] AS [Large], 
+    [Prices].[Regular] AS [Regular], 
+    [Prices].[Thin] AS [Thin], 
+    [Prices].[Thick] AS [Thick], 
+    [Prices].[Sausage] AS [Sausage], 
+    [Prices].[Pepperoni] AS [Pepperoni], 
+    [Prices].[Onions] AS [Onions], 
+    [Prices].[GreenPeppers] AS [GreenPeppers]
+    FROM [dbo].[Prices] AS [Prices]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
