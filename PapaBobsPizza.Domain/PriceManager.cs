@@ -19,10 +19,7 @@ namespace PapaBobsPizza.Domain
             return totalCost;
         }
 
-        private static DTO.PricesDTO getPrices()
-        {
-            return Persistence.PriceRepository.GetPrices();
-        }
+        private static DTO.PricesDTO getPrices() => Persistence.PriceRepository.GetPrices();
 
         private static decimal getSizeCost(OrderDTO order, PricesDTO prices)
         {
